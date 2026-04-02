@@ -1,0 +1,54 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "width": 960,
+      "height": 1280,
+      "file_name": "image_1.jpg"
+    },
+    {
+      "id": 2,
+      "width": 480,
+      "height": 640,
+      "file_name": "image_2.jpg"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "bbox": [
+        220,
+        138,
+        598,
+        286
+      ],
+      "category_id": 1,
+      "area": 171028,
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "image_id": 2,
+      "bbox": [
+        46,
+        275,
+        539,
+        390
+      ],
+      "category_id": 2,
+      "area": 210210,
+      "iscrowd": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Royal"
+    },
+    {
+      "id": 2,
+      "name": "London"
+    }
+  ]
+}
