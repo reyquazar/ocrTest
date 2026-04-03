@@ -70,7 +70,7 @@ def convert_folder():
 
                 # Убираем кавычки и разбиваем
                 cleaned = line.replace('"', '').replace('\"', '')
-                parts = [p.strip() for p in cleaned.split(',')]
+                parts = [p.strip() for p in cleaned.split(' ')]
 
                 if len(parts) < 4:
                     print(f"   ⚠️  Строка {line_num}: неверный формат → пропущено")
