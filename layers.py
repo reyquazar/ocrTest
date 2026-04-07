@@ -2,11 +2,12 @@ def predictModel():
     from ultralytics import YOLO
     import albumentations
 
-    model = YOLO("runs/best4.pt")
+
+    model = YOLO("runs/best6.pt")
 
     # results = model.predict(source="coco8/images/train/100.jpg", save=True, conf=0.25)
-    results = model.predict(source="testimages/img_1.png", save=True, conf=0.25)
-
+    # results = model.predict(source="testimages/img.png", save=True, conf=0.25)
+    results = model.predict(source="captcha/captcha_83vd7.png", save=True, conf=0.25)
 
 def learnTorch():
     import torch
@@ -36,3 +37,4 @@ def learnTorch():
 
 
 predictModel()
+# learnTorch()
