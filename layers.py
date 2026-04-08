@@ -3,11 +3,11 @@ def predictModel():
     import albumentations
 
 
-    model = YOLO("runs/best6.pt")
-
+    model = YOLO("runs/best8.pt")
+    png_path = "captcha/0BXLSYZ2.png"
     # results = model.predict(source="coco8/images/train/100.jpg", save=True, conf=0.25)
     # results = model.predict(source="testimages/img.png", save=True, conf=0.25)
-    results = model.predict(source="captcha/captcha_83vd7.png", save=True, conf=0.25)
+    results = model.predict(source=png_path, save=True, conf=0.25)
 
 def learnTorch():
     import torch
