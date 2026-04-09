@@ -1,8 +1,5 @@
-import time
 
 from PIL import Image, ImageDraw, ImageFont
-import random
-
 import os
 import shutil
 
